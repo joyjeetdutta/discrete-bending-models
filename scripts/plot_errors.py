@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
-
 R = 100.0
 H_exact = 1
 #H_exact = 1.0 / (2.0 * R)
@@ -20,7 +19,7 @@ mean_curvature = []
 
 
 for ntheta in ntheta_values:
-    filename = f"Poster_data/ibm/curv/curv_s{ntheta}.csv"
+    filename = f"data/ibm/curv/curv_s{ntheta}.csv"
 
     indices = []
     curvatures = []
@@ -100,7 +99,6 @@ plt.plot(
 plt.xlabel(r"Number of mesh vertices $N$")
 plt.ylabel("Mean absolute force density error")
 plt.title("Mean absolute force density error with FDHE for various resolutions of the test case")
-#plt.title("Mean absolute normal force density error excluding 4 boundary layers")
 plt.grid(True, which="both", alpha=0.3)
 
 plt.show()

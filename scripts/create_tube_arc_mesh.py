@@ -108,31 +108,6 @@ n_theta = 48 # change
 theta_min=np.radians(88)
 theta_max=np.radians(92)
 
-
-'''
-for n_theta in [6, 8, 12, 18, 24, 32, 40, 48]:
-
-    V_plane, F_plane = plane(
-        length,
-        radius,
-        n_theta,
-        theta_min,
-        theta_max
-    )
-
-    V, F = tube_arc(
-        length,
-        radius,
-        n_theta,
-        theta_min,
-        theta_max
-    )
-
-    write_obj(V_plane, F_plane, f"Poster_data/meshes/planes/p_ntheta{n_theta}.obj")
-    write_obj(V, F, f"Poster_data/meshes/arcs/ntheta{n_theta}.obj")
-
-'''
-
 V, F = tube_arc(
         0.8,
         0.5,

@@ -30,14 +30,7 @@ def read_obj(filename):
 
     return np.array(vertices), np.array(faces)
 
-#V, F = read_obj("sphere.obj")
-
-#V, F = read_obj("Tube/tube_arc/arc_experiment/arc_meshes/ntheta5.obj")
-#V, F = read_obj("Tube/tube_meshes/tube_r1_lowres.obj")
-#V, F = read_obj("Meshes/sphere_fluidized.obj")
-V, F = read_obj("Poster_data/meshes/spheres/sphere12.obj")
-#V, F = read_obj("Poster_data/meshes/arcs/exag_arc.obj")
-V, F = read_obj("Poster_data/meshes/planes/model_plane.obj")
+V, F = read_obj("data/meshes/arcs/exag_arc.obj")
 
 triangles = V[F]
 
@@ -55,12 +48,13 @@ ax.add_collection3d(mesh)
 
 ax.set_xlim(V[:, 0].min(), V[:, 0].max())
 ax.set_ylim(V[:, 1].min(), V[:, 1].max())
-ax.set_zlim(-1,1)
+ax.set_ylim(V[:, 2].min(), V[:, 2].max())
+#ax.set_zlim(-1,1) # use this for plane
 
 ax.set_box_aspect([
     np.ptp(V[:, 0]),
     np.ptp(V[:, 1]),
-    1
+    np.ptp(V[:, 1]) # adjust this if plane
 ])
 
 # Remove axes, ticks, labels, grid and 3D panes

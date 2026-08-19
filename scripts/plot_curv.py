@@ -16,7 +16,7 @@ spacings = []
 
 
 for ntheta in ntheta_values:
-    filename = f"Poster_data/ibm/curv/sphere/curv_s{ntheta}.csv"
+    filename = f"data/ibm/curv/sphere/curv_s{ntheta}.csv"
 
     indices = []
     curvatures = []
