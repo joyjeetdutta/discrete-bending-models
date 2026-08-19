@@ -52,10 +52,10 @@ int main()
              << ntheta << endl;
 
         string plane = string(PROJECT_DIR) +
-            "/Poster_data/meshes/planes/p_ntheta" + to_string(ntheta) + ".obj";
+            "/data/meshes/planes/p_ntheta" + to_string(ntheta) + ".obj";
 
         string tube_arc =
-            string(PROJECT_DIR) + "/Poster_data/meshes/arcs/ntheta" + to_string(ntheta) + ".obj";
+            string(PROJECT_DIR) + "/data/meshes/arcs/ntheta" + to_string(ntheta) + ".obj";
 
         MatrixXd V_plane;
         MatrixXi F_plane;
@@ -104,13 +104,13 @@ int main()
         // SAVE RESULTS
         string ibm_output =
             string(PROJECT_DIR) +
-            "/Poster_data/ibm/fd/fd_ntheta" +
+            "/data/results/ibm/fd/fd_ntheta" +
             to_string(ntheta) +
             ".csv";
 
         string fdhe_output =
             string(PROJECT_DIR) +
-            "/Poster_data/hess/fd/fd_ntheta" +
+            "/data/results/fdhe/fd/fd_ntheta" +
             to_string(ntheta) +
             ".csv";
 
