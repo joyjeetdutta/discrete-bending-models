@@ -11,8 +11,7 @@ Particularly, convergence of force density and mean curvature are studied along 
 
 ## Report
 
-Report draft will be available here
-
+Initial draft available [here](https://github.com/joyjeetdutta/discrete-surface-bending/blob/main/paper/MD_Report_Draft1.pdf)
 ## Poster 
 
 - Available [here](https://github.com/joyjeetdutta/discrete-surface-bending/blob/main/poster/final_poster.pdf)
